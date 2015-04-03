@@ -1,0 +1,21 @@
+.full-tank {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: white;
+    position: absolute;
+    overflow: hidden;
+}
+
+#wrapper {
+    padding: 0;
+    margin: 0;
+}
+
+.full-tank .water {
+    position: absolute;
+    background: blue;
+    width: 100%;
+    bottom: 0;
+}
