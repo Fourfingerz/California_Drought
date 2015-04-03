@@ -1,9 +1,23 @@
+
+
 <h1>California Drought</h1>
 <h2>How many gallons of water does California have in its reserves?</h2>
 
 <div class="full-tank">
 	<div id="wrapper">
-    	<div class="water" style="height: 30%"></div>
+    	<div id="water" style="height: 50%"></div>
     </div>
 </div>
+
+<script>
+$(document).ready(function() {
+	$('#water').ripples({
+		resolution: 512,
+		dropRadius: 20,
+		perturbance: 0.04,
+	});
+});
+</script>
+
+
 

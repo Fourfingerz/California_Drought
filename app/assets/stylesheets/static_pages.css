@@ -6,6 +6,7 @@
     background: white;
     position: absolute;
     overflow: hidden;
+    background-image: url(/assets/desert.jpg);
 }
 
 #wrapper {
@@ -13,9 +14,10 @@
     margin: 0;
 }
 
-.full-tank .water {
+#water {
     position: absolute;
-    background: blue;
+    background-image: url(/assets/Sky_Blue.png);
     width: 100%;
     bottom: 0;
+    opacity: 0.5;
 }
