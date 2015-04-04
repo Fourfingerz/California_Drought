@@ -1,7 +1,12 @@
 
+<div class="titles">
+	<h1>California Drought</h1>
+	<h2>How many gallons of water does California have in its reserves?</h2>
+</div>
 
-<h1>California Drought</h1>
-<h2>How many gallons of water does California have in its reserves?</h2>
+<div id="counter">
+
+</div>
 
 <div class="full-tank">
 	<div id="wrapper">
@@ -10,6 +15,7 @@
 </div>
 
 <script>
+// Water Technology
 $(document).ready(function() {
 	$('#water').ripples({
 		resolution: 256,
@@ -18,7 +24,7 @@ $(document).ready(function() {
 	});
 });
 
-// Automatic drops
+// Automatic drips on Water
 	setInterval(function() {
 		var $el = $('#water');
 		var x = Math.random() * $el.outerWidth();
@@ -28,6 +34,19 @@ $(document).ready(function() {
 		
 		$el.ripples('drop', x, y, dropRadius, strength);
 	}, 400);
+
+// Flip Counter Technology
+    var counter = -12345678;
+
+    var updateMsc = 100;
+    var myCounter = new flipCounter('counter', {value:counter});
+
+    function updateCounter() {
+       myCounter.setValue(counter++);
+    }
+
+    setInterval(updateCounter, updateMsc);
+
 </script>
 
 
