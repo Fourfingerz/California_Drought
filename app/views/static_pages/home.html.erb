@@ -5,7 +5,7 @@
 
 <div class="full-tank">
 	<div id="wrapper">
-    	<div id="water" style="height: 50%"></div>
+    	<div id="water" style="height: 30%"></div>
     </div>
 </div>
 
@@ -17,6 +17,17 @@ $(document).ready(function() {
 		perturbance: 0.04,
 	});
 });
+
+// Automatic drops
+	setInterval(function() {
+		var $el = $('#water');
+		var x = Math.random() * $el.outerWidth();
+		var y = Math.random() * $el.outerHeight();
+		var dropRadius = 100;
+		var strength = 0.04 + Math.random() * 0.04;
+		
+		$el.ripples('drop', x, y, dropRadius, strength);
+	}, 400);
 </script>
 
 
