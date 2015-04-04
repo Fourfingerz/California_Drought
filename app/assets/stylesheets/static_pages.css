@@ -17,7 +17,7 @@
 #water {
     position: absolute;
     background-image: url(/assets/Sky_Blue.png);
-    width: 100%;
+    width: 500%;
     bottom: 0;
-    opacity: 0.4;
+    opacity: 0.5;
 }
