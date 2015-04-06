@@ -1,20 +1,27 @@
-
-<div class="titles">
-	<h1>California Drought</h1>
-	<h2>How many gallons of water does California have in its reserves?</h2>
+<div class="jumbotron">
+	<div class="titles">
+		<h1>California Drought</h1>
+		<h3>How much water does California have in its reserves?</h3>
+		</br>
+		</br>
+		<div id="counter"></div>
+		<p>Acre Foot</p>
+	</div>
 </div>
 
-<div id="counter">
 
-</div>
 
+<!-- All values are CALIBRATED, modify with caution! -->
 <div class="full-tank">
 	<div id="wrapper">
+
+		<!-- IMPORTANT: WATER HEIGHT VALUE -->
     	<div id="water" style="height: 30%"></div>
     </div>
 </div>
 
 <script>
+
 // Water Technology
 $(document).ready(function() {
 	$('#water').ripples({
@@ -36,9 +43,11 @@ $(document).ready(function() {
 	}, 400);
 
 // Flip Counter Technology
+	// Sets initial value
     var counter = -12345678;
+    // Rate of tick
+    var updateMsc = 10;
 
-    var updateMsc = 100;
     var myCounter = new flipCounter('counter', {value:counter});
 
     function updateCounter() {
