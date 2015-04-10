@@ -1,5 +1,7 @@
 class StaticPagesController < ApplicationController
-	def home
+	@@rawdata = File.read("public/assets/california.json")
+
+  def home
 	end
 
   def treemap
@@ -8,7 +10,7 @@ class StaticPagesController < ApplicationController
 	def data
 		respond_to do |format|
 			format.json {
-        render :json => [1,2,3,4,5]
+        render :json => @@rawdata
       }
 		end
 	end
