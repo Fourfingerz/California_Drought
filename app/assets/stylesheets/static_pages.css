@@ -12,7 +12,11 @@
     margin: 0 auto;
 }
 
-/* Historical Average Line 
+.titles > h1 {
+    font-size: 56px;
+}
+
+/* Historical Average Line */
 
 #historical-text {
     font-family: sans-serif;
@@ -27,6 +31,7 @@
     opacity: 0.4;
     font-family: "Lucida Console", Monaco, monospace;
     position: relative;
+    z-index: 3;
 }
 
 #historical-num {
@@ -34,7 +39,7 @@
     text-align: right;
     font-family: sans-serif;
 }
-*/
+
 
 /* Water Technology */
 .full-tank {

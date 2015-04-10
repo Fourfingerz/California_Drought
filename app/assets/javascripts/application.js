@@ -13,6 +13,8 @@
 //= require jquery
 //= require jquery_ujs
 //= require turbolinks
+//= require d3
+//= require graph
 //= require jquery.ripples
 //= require jquery-flipcounter
 //= require_tree .

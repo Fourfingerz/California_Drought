@@ -25,6 +25,11 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 
 gem 'twitter-bootstrap-rails', '~> 3.2.0'
 gem 'therubyracer', '~> 0.12'
+
+gem 'nokogiri'
+gem 'pony'
+
+gem 'd3-rails'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
