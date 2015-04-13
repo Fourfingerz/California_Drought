@@ -4,94 +4,89 @@
       "children": [
         {
           "rate": -0.4066358024691358,
-          "value": 769,
-          "name": "Black or African American, Non-Hispanic"
+          "value": 6.8,
+          "name": "Instream"
         },
         {
           "rate": -0.35092180546726004,
-          "value": 1021,
-          "name": "Hispanic or Latino"
+          "value": 25.1,
+          "name": "Wild & Scenic"
         },
         {
           "rate": -0.44886363636363635,
-          "value": 291,
-          "name": "White, Non-Hispanic"
+          "value": 5.3,
+          "name": "Required Delta Outflow"
         },
         {
           "rate": -0.4716981132075472,
-          "value": 28,
-          "name": "American Indian or Alaska Native, Non-Hispanic"
+          "value": 1.4,
+          "name": "Managed Wetlands"
         },
         {
           "rate": -0.234860883797054,
-          "value": 3935,
-          "name": "Asian or Pacific Islander, Non-Hispanic"
+          "value": 0.1,
+          "name": "Conveyance"
         }
       ],
       "rate": -0.348458904109589,
-      "name": "Agricultural Use"
+      "name": "Environmental Use"
     },
     {
       "children": [
         {
           "rate": -0.36470588235294116,
-          "value": 324,
-          "name": "Black or African American, Non-Hispanic"
+          "value": 29.6,
+          "name": "Applied Water - Crops"
         },
         {
           "rate": -0.06147540983606557,
-          "value": 458,
-          "name": "Hispanic or Latino"
+          "value": 2.7,
+          "name": "Conveyance"
         },
         {
           "rate": -0.3368055555555556,
-          "value": 573,
-          "name": "White, Non-Hispanic"
-        },
-        {
-          "rate": 0.14285714285714285,
-          "value": 32,
-          "name": "American Indian or Alaska Native, Non-Hispanic"
-        },
-        {
-          "rate": 0.010443864229765013,
-          "value": 774,
-          "name": "Asian or Pacific Islander, Non-Hispanic"
+          "value": 0.6,
+          "name": "Ground Water Rechargge"
         }
       ],
       "rate": -0.18637048192771086,
-      "name": "Personal Use"
+      "name": "Agricultural Use"
     },
     {
       "children": [
         {
           "rate": -0.39619651347068147,
-          "value": 762,
-          "name": "Black or African American, Non-Hispanic"
+          "value": 0.8,
+          "name": "Large Landscape"
         },
         {
           "rate": -0.1719260065288357,
-          "value": 761,
-          "name": "Hispanic or Latino"
+          "value": 1.0,
+          "name": "Commercial"
         },
         {
           "rate": -0.2727272727272727,
-          "value": 608,
-          "name": "White, Non-Hispanic"
+          "value": 0.5,
+          "name": "Industrial"
         },
         {
           "rate": -0.23809523809523808,
-          "value": 48,
-          "name": "American Indian or Alaska Native, Non-Hispanic"
+          "value": 0.2,
+          "name": "Energy Production"
         },
         {
           "rate": -0.05090137857900318,
-          "value": 795,
-          "name": "Asian or Pacific Islander, Non-Hispanic"
+          "value": 2.5,
+          "name": "Residential - Interior"
+        },
+        {
+          "rate": -0.05090137857900318,
+          "value": 2.7,
+          "name": "Residential - Exterior"
         }
       ],
       "rate": -0.2358936117325379,
-      "name": "Industrial Use"
+      "name": "Urban Use"
     }
   ],
   "rate": -0.28656039777712783,

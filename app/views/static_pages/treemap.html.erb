@@ -1,5 +1,5 @@
 
-<h1>Water Use in California</h1>
+<h1 id="header">Water Use in California</h1>
 
 <p id="chart">
 <script>
@@ -176,7 +176,7 @@ function getContrast50(hexcolor){
         .attr("class", "parent")
         .call(rect)
       .append("title")
-        .text(function(d) {console.log(typeof(d.value), d.value); return d.name + ', Acre Feet of Water: ' + d.value + ', percent change: ' + formatNumber(d.rate); });
+        .text(function(d) {console.log(typeof(d.value), d.value); return d.name + ', Million Acre Feet of Water: ' + d.value + ', percent change: ' + formatNumber(d.rate); });
 
     g.append("text")
         .attr("dy", ".75em")
