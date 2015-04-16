@@ -6,7 +6,7 @@ body {
   color: black;
 }
 
-/* Title */
+/* Title 
 .content {
     margin: 0 auto;
     text-align: center;
@@ -24,7 +24,7 @@ body {
     font-size: 56px;
 }
 
-/* Historical Average Line */
+/* Historical Average Line 
 
 #historical-text {
     font-family: sans-serif;
@@ -49,7 +49,7 @@ body {
 }
 
 
-/* Water Technology */
+/* Water Technology 
 .full-tank {
     width: 100%;
     height: 100%;
@@ -78,7 +78,7 @@ body {
     z-index: 2;
 }
 
-/* Flip Counter */
+/* Flip Counter 
 
 
 ul.cd {
@@ -107,6 +107,7 @@ li.s {
     width: 12px;
     height: 100px;
 }
+*/
 
 /* D3 Treemap */
 #chart {
@@ -170,10 +171,11 @@ rect.parent,
   fill: black;
 }
 
-/* Imported Styles */
+/* Imported Styles 
 html {
   min-width: 1040px;
 }
+*/
 
 body {
   font-family: "Helvetica Neue", Helvetica, sans-serif;
@@ -295,16 +297,3 @@ iframe {
   border: 1px solid #DEDEDE;
 }
 
-/* On hover popup */
-#pup {
-  position:absolute;
-  z-index:200; /* aaaalways on top*/
-  padding: 3px;
-  margin-left: 10px;
-  margin-top: 5px;
-  width: 250px;
-  border: 1px solid black;
-  background-color: #777;
-  color: white;
-  font-size: 0.95em;
-}
