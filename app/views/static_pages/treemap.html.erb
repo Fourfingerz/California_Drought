@@ -42,15 +42,24 @@ var svg = d3.select("#chart").append("svg")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")")
     .style("shape-rendering", "crispEdges");
 
-    // New Tooltips 
-    var celldata = '';
-    var tooltip = d3.select("#chart")
-      .append("div")
-      .style("position", "absolute")
-      .style("z-index", "10")
-      .style("visibility", "hidden")
-      // .select("children")
-      .text('tooltip');
+// New Tooltips 
+var celldata;
+var tooltip = d3.select("#chart")
+    .append("tooltip")
+    .style("position", "absolute")
+    .style("z-index", "201")
+    .style("visibility", "hidden")
+    .style("width", "200px")
+    .style("padding", "10px")
+    .style("background-color", "orange")
+    .style("pointer-events", "none")
+    .style("-webkit-border-radius", "10px")
+    .style("-moz-border-radius", "10px")
+    .style("border-radius", "5px")
+    .style("-webkit-box-shadow", "4px 4px 10px rgba(0, 0, 0, 0.4)")
+    .style("-mox-box-shadow", "4px 4px 4px 10px rgba(0, 0, 0, 0.4)")
+    .style("box-shadow", "4px 4px 10px rbga(0, 0, 0, 0.4)")
+    .text('tooltip content goes here');
 
 var grandparent = svg.append("g")
     .attr("class", "grandparent");
@@ -180,14 +189,14 @@ function getContrast50(hexcolor){
 
     g.append("rect")
         .attr("class", "parent")
-        .on("mouseover", function(d){celldata = tooltip.html("Millions of Acre Feet: " + d.value);
+        .on("mouseover", function(d){celldata = tooltip.text(d.value + " Million Acre Feet" + ', Percent Change: ' + formatNumber(d.rate));
                                     return tooltip.style("visibility", "visible") && celldata;
                                     })
         .on("mousemove", function(){return tooltip.style("top", (event.pageY-10)+"px").style("left",(event.pageX+10)+"px");})
         .on("mouseout", function(){return tooltip.style("visibility", "hidden");})
        .call(rect)
-       .append("title")
-         .text(function(d){return (d.name + ', Million Acre Feet of Water: ' + d.value + ', percent change: ' + formatNumber(d.rate));});
+       // .append("title")
+       //   .text(function(d){return (d.name + ', Million Acre Feet of Water: ' + d.value + ', percent change: ' + formatNumber(d.rate));});
 
     g.append("text")
         .attr("dy", ".75em")
@@ -250,8 +259,5 @@ function getContrast50(hexcolor){
         ? name(d.parent) + "." + d.name
         : d.name;
   }
-
-
-
 });
 </script>
