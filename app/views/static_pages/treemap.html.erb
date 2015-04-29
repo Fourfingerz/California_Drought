@@ -1,7 +1,5 @@
 
-<h1 id="header">Water Use in California</h1>
 
-<p id="chart">
 <script>
 var margin = {top: 30, right: 0, bottom: 20, left: 0},
     width = 960,
@@ -187,6 +185,7 @@ function getContrast50(hexcolor){
         .attr("class", "child")
         .call(rect);
 
+    // Adds Tooltips on Mouseover
     g.append("rect")
         .attr("class", "parent")
         .on("mouseover", function(d){celldata = tooltip.text(d.value + " Million Acre Feet" + ', Percent Change: ' + formatNumber(d.rate));
@@ -260,4 +259,5 @@ function getContrast50(hexcolor){
         : d.name;
   }
 });
+
 </script>

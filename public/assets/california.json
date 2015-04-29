@@ -34,6 +34,18 @@
     {
       "children": [
         {
+          "children": [
+            {
+              "rate": -0.45,
+              "value": 6.25,
+              "name": "Animal Feed"
+            },
+            {
+              "rate": 0.25,
+              "value": 2.90,
+              "name": "Non-Animal Production"
+            }
+          ],
           "rate": -0.36470588235294116,
           "value": 29.6,
           "name": "Applied Water - Crops"
@@ -57,7 +69,7 @@
         {
           "rate": -0.39619651347068147,
           "value": 0.8,
-          "name": "Large Landscape"
+          "name": "Large Landscaping"
         },
         {
           "rate": -0.1719260065288357,
@@ -90,5 +102,5 @@
     }
   ],
   "rate": -0.28656039777712783,
-  "name": "Total Water Consumption"
+  "name": "Total Water Consumption - State of California"
 }

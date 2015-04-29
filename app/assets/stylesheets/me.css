@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width:100%;
+    height: 100%;
+    margin: 0;
+}
+
+/* ********* */
+/* Intro Box */
+#header {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    /* background: white; */
+    /* background-image: url("http://i.imgur.com/1Dhgko1.jpg?1"); */
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("http://i.imgur.com/1Dhgko1.jpg?1") no-repeat left center fixed;;
+    background-size:cover;
+    -webkit-background-size:cover;
+    margin: 0;
+}
+#wrap {
+    height: 200px;
+    width: 500px;
+    /* background:white; */
+    background-color: rgba();
+    margin:0px auto;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-100px;
+    margin-left:-250px;
+}
+
+h1 {
+    text-align:center;
+}
+
+#greeting {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 24px;
+  text-align:center;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+#myrole {
+    text-align:center;
+}
+
+#mywork {
+  font-size: 24px;
+  text-align:center;
+  color: silver;
+}
+
+.container {
+  background-color: black;
+}
+
+#myname {
+  font-size: 88px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  text-shadow: 3px 3px #000000;
+}
+
+#myrole {
+  font-size: 52px;
+  color: white;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+#mywork {
+  background-color: rgb();
+}
+
+/* Sliding Project Panels */
+
+.projects {
+  color: black;
+  background-color: white;
+  
+}
+
+.actionable_pix {
+  display:inline;
+  list-style-type:none;
+
+}
+
+dl {
+
+}
+
+dd {
+  margin: 0;
+  padding: 1em 0;
+}
+
+dt {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 2.5em;
+  line-height: 2em;
+  background: #e3e3e3;
+  border-bottom: 1px solid #c5c5c5;
+  border-top: 1px solid white;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 10px;
+}
+
+dt > h4 {
+  font-weight: italic;
+}
+
+dt:hover {
+  background: white;
+}
+
+dt:first-child { border-stop: none; }
+dt:nth-last-child(2) { border-bottom: none; }
+
+.hide { display: none;}
+
+/* Bottom Contact Div */
+
+.contact > h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.contactbox {
+  padding-left: 1cm;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: white;
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("http://i.imgur.com/X4mhLDT.jpg") no-repeat fixed;
+
+  background-size: cover;
+  text-shadow: 2px 2px #000000;
+}
+
+
+/* ********** */
+/* D3 Treemap */
+#chart {
+  width: 960px;
+  height: 500px;
+  padding-left: 15%;
+  padding-bottom: 2cm;
+}
+
+text {
+  pointer-events: none;
+}
+
+.grandparent text {
+  font-weight: bold;
+}
+
+rect {
+/*  fill: none; */
+  stroke: #fff;
+  stroke-width: 1px;
+}
+
+rect.parent,
+.grandparent rect {
+  stroke-width: 2px;
+}
+
+.grandparent:hover rect {
+  fill: darkgrey;
+}
+
+.children rect.parent,
+.grandparent rect {
+  cursor: pointer;
+}
+
+.children rect.child {
+  opacity: 0;
+}
+
+.children rect.parent {
+}
+
+.children:hover rect.child {
+  opacity: 1;
+  stroke-width: 1px;
+}
+
+.children:hover rect.parent {
+  opacity: 0;
+}
+
+.legend rect {
+  stroke-width: 0px;
+}
+
+.legend text {
+  text-anchor: middle;
+  pointer-events: auto;
+  font-size: 15px;
+  font-family: sans-serif;
+  fill: black;
+}

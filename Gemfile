@@ -30,6 +30,9 @@ gem 'nokogiri'
 gem 'pony'
 
 gem 'd3-rails'
+
+gem 'react-rails', '~> 1.0'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
