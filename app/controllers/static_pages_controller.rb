@@ -1,6 +1,4 @@
 class StaticPagesController < ApplicationController
-  include RecommendationHelper
-
 	@@rawdata = File.read("public/assets/california.json")
 
   def home
@@ -18,9 +16,6 @@ class StaticPagesController < ApplicationController
   end
 
   def me
-    #@recommendations = RecommendationHelper.recommendations_of([:block])
   end
 
-  def algorithm
-  end
 end

@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   get 'static_pages/treemap'
   get 'static_pages/data', :defaults => { :format => 'json' }
   get 'static_pages/me'
-  root 'static_pages#home'
+  root 'static_pages#me'
 
 
   

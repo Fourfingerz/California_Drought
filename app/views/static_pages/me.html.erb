@@ -27,10 +27,10 @@
 					
 					<div id="actionable_grid">
 			            <div class="actionable_pix">
-			                <img src="http://i.imgur.com/5dyy6DO.png?2" style="width: 400px;">
+			                <img src="http://i.imgur.com/KxcdZS6.png" style="width: 400px;">
 			            </div>
 			            <div class="actionable_pix">
-			            	<img src="http://i.imgur.com/KxcdZS6.png" style="width: 400px;">
+			            	<img src="http://i.imgur.com/5dyy6DO.png?2" style="width: 500px;">
 			            </div>
 			            <div class="actionable_pix">
 			                <img src="http://i.imgur.com/phrP3kX.png" style="width: 400px;">
@@ -38,7 +38,7 @@
 		        	</div>
 
 		        	<h4>ACTIVE PROJECT</h4>
-					<a href="www.beactionable.com">www.beactionable.com</a>
+					<a href="http://www.beactionable.com" target="_tab">www.beactionable.com</a>
 					<p>The projects that help, the news you care about.</p>
 					<p>Created with Ruby on Rails, HTML, CSS, Git.</p>
 				</dd>
@@ -47,7 +47,7 @@
 				<dd>
 					<img src="http://i.imgur.com/uceioEj.png" style="width: 600px;"></br>
 					<h4>ACTIVE PROJECT</h4>
-					<a href="fullsight.herokuapp.com">fullsight.herokuapp.com</a>
+					<a href="http://fullsight.herokuapp.com" target="_tab">fullsight.herokuapp.com</a>
 					<p>Seamless Inline Video Player</p>
 					<p>Created with JavaScript, jQuery, HTML, CSS.</p>
 				</dd>
@@ -57,27 +57,35 @@
 					<div>
 						<h1 id="d3-title">Drought and Water Use in California</h1>
 						<p id="chart">
-						<p style="text-align: center;">Created with D3.js, HTML, CSS.</p>
+						<h3 style="text-align: center;">Created with D3.js, HTML, CSS.</h3>
 					</div>
 				</dd>
 
-			<dt>Recommendation Algorithm</dt>
+			<dt>Pair Recommendation Algorithm</dt>
 				<dd>
-					<p>Finds reoccuring pairs given a search history to find habits or interests of users.
-					</p>
+					<h3>This algorithm sifts through a history of searches, (below as "input") and finds terms that have a high probability of correlation with the other. 
+					</h3>
+					<h5>Example: If the output produces "Levi Strauss & Co,JNCO Jean Company" or "Jay-Z,Beyonce", these pairs are less likely to be coincidental and are probably related. </h5>
+					</br>
+					<p>Click run, scroll to the bottom of the code and the algorithm finds the </br>company pairs with the strongest correlation that can be given as recommendations.</p>
 					<div>
-						<%= form_tag "staticpages" do %>
-						  <%= text_field_tag ":block" %>
-						  <%= submit_tag "Submit Block" ,  :action => 'create' %>
-						  <% end %>
-						<h1><%= @recommendations %></h1>
+						<script src="//repl.it/embed/lhD/14.js"></script>
 					</div>
 					<p>Written in Ruby.</p>
 				</dd>
 
 			<dt>Small Business Branding / Design</dt>
 				<dd>
-					<p>Printed Lunch and Dinner menus, small business branding for restaurant in New York City.</p>
+					<div id="menu_grid">
+			            <div class="menu_pix">
+			                <img src="<%= asset_path('menu1.JPG') %>" style="width: 400px;">
+			            </div>
+			            <div class="menu_pix">
+			            	<img src="<%= asset_path('menu2.JPG') %>" style="width: 300px;">
+			            </div>
+		        	</div>
+
+					<p>Printed Lunch and Dinner menus, business cards, and small business branding for a restaurant in New York City.</p>
 					<p>Created with InDesign, Photoshop, and Illustrator.</p>
 				</dd>
 
@@ -292,7 +300,7 @@
 	    .attr("y", 6 - margin.top)
 	    .attr("dy", ".75em")
 
-	d3.json("data.json", function(error, root) {
+	d3.json("static_pages/data.json", function(error, root) {
 	  if (error) return console.warn(error);
 	  console.log(root);
 	  initialize(root);

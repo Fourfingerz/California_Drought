@@ -107,6 +107,11 @@ h1 {
   list-style-type:none;
 }
 
+.menu_pix {
+  display:inline;
+  list-style-type:none;
+}
+
 dl {
 
 }
