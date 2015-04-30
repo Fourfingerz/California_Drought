@@ -12,11 +12,12 @@ html, body {
     height: 100%;
     /* background: white; */
     /* background-image: url("http://i.imgur.com/1Dhgko1.jpg?1"); */
-    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("http://i.imgur.com/1Dhgko1.jpg?1") no-repeat left center fixed;;
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("http://i.imgur.com/1Dhgko1.jpg?1") no-repeat left center scroll;;
     background-size:cover;
     -webkit-background-size:cover;
     margin: 0;
 }
+
 #wrap {
     height: 200px;
     width: 500px;
@@ -130,12 +131,11 @@ dt:nth-last-child(2) { border-bottom: none; }
   padding-left: 1cm;
   font-family: "Trebuchet MS", Helvetica, sans-serif;
   color: white;
-  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("http://i.imgur.com/X4mhLDT.jpg") no-repeat fixed;
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("http://i.imgur.com/X4mhLDT.jpg") no-repeat scroll;
 
   background-size: cover;
   text-shadow: 2px 2px #000000;
 }
-
 
 /* ********** */
 /* D3 Treemap */
