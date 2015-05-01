@@ -1,0 +1,750 @@
+ul.cd{float:left;list-style-type:none;margin:0;padding:0}
+li.t{background:url(../assets/digits-top.png) 0 0 no-repeat;width:53px;height:39px}
+li.b{background:url(../assets/digits-bottom.png) 0 0 no-repeat;width:53px;height:64px}
+li.s{background:url(../assets/comma.png) 2px 75px no-repeat;width:12px;height:100px}
+html, body {
+    width:100%;
+    height: 100%;
+    margin: 0;
+}
+
+/* ********* */
+/* Intro Box */
+#header {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    /* background: white; */
+    /* background-image: url("http://i.imgur.com/1Dhgko1.jpg?1"); */
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("http://i.imgur.com/1Dhgko1.jpg?1") no-repeat left center scroll;;
+    background-size:cover;
+    -webkit-background-size:cover;
+    margin: 0;
+}
+
+#wrap {
+    height: 200px;
+    width: 500px;
+    /* background:white; */
+    background-color: rgba(0,0,0,0);
+    margin:0px auto;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-100px;
+    margin-left:-250px;
+}
+
+h1 {
+    text-align:center;
+}
+
+#greeting {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 24px;
+  text-align:center;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+#myrole {
+    text-align:center;
+}
+
+#mywork {
+  font-size: 24px;
+  text-align:center;
+  color: silver;
+  background-color: rgba(0,0,0,0);
+}
+
+.container {
+  background-color: black;
+}
+
+#myname {
+  font-size: 88px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  text-shadow: 3px 3px #000000;
+}
+
+#myrole {
+  font-size: 52px;
+  color: white;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+/* Sliding Project Panels */
+
+.projects {
+  color: black;
+  background-color: white;
+  
+}
+
+.actionable_pix {
+  display:inline;
+  list-style-type:none;
+
+}
+
+dl {
+
+}
+
+dd {
+  margin: 0;
+  padding: 1em 0;
+}
+
+dt {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 2.5em;
+  line-height: 2em;
+  background: #e3e3e3;
+  border-bottom: 1px solid #c5c5c5;
+  border-top: 1px solid white;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 10px;
+}
+
+dt > h4 {
+  font-weight: italic;
+}
+
+dt:hover {
+  background: white;
+}
+
+dt:first-child { border-stop: none; }
+dt:nth-last-child(2) { border-bottom: none; }
+
+.hide { display: none;}
+
+/* Bottom Contact Div */
+
+.contact > h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.contactbox {
+  padding-left: 1cm;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: white;
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("http://i.imgur.com/X4mhLDT.jpg") no-repeat scroll;
+
+  background-size: cover;
+  text-shadow: 2px 2px #000000;
+}
+
+/* ********** */
+/* D3 Treemap */
+#chart {
+  width: 960px;
+  height: 500px;
+  padding-left: 15%;
+  padding-bottom: 2cm;
+}
+
+text {
+  pointer-events: none;
+}
+
+.grandparent text {
+  font-weight: bold;
+}
+
+rect {
+/*  fill: none; */
+  stroke: #fff;
+  stroke-width: 1px;
+}
+
+rect.parent,
+.grandparent rect {
+  stroke-width: 2px;
+}
+
+.grandparent:hover rect {
+  fill: darkgrey;
+}
+
+.children rect.parent,
+.grandparent rect {
+  cursor: pointer;
+}
+
+.children rect.child {
+  opacity: 0;
+}
+
+.children rect.parent {
+}
+
+.children:hover rect.child {
+  opacity: 1;
+  stroke-width: 1px;
+}
+
+.children:hover rect.parent {
+  opacity: 0;
+}
+
+.legend rect {
+  stroke-width: 0px;
+}
+
+.legend text {
+  text-anchor: middle;
+  pointer-events: auto;
+  font-size: 15px;
+  font-family: sans-serif;
+  fill: black;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    width:100%;
+    height: 100%;
+    margin: 0;
+}
+
+/* ********* */
+/* Intro Box */
+#header {
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    /* background: white; */
+    /* background-image: url("http://i.imgur.com/1Dhgko1.jpg?1"); */
+    background: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("<%= asset_path('hksky.jpg') %>") no-repeat left center fixed;
+    background-size:cover;
+    -webkit-background-size:cover;
+    margin: 0;
+}
+
+#wrap {
+    height: 200px;
+    width: 500px;
+    /* background:white; */
+    background-color: rgba(0,0,0,0);
+    margin:0px auto;
+    position:absolute;
+    top:50%;
+    left:50%;
+    margin-top:-100px;
+    margin-left:-250px;
+}
+
+h1 {
+    text-align:center;
+}
+
+#greeting {
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  font-size: 24px;
+  text-align:center;
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+#myrole {
+    text-align:center;
+    margin: 0;
+    padding: 0;
+}
+
+#mywork {
+  font-size: 24px;
+  text-align:center;
+  color: silver;
+  background-color: rgba(0,0,0,0);
+}
+
+.container {
+  background-color: black;
+}
+
+#myname {
+  font-size: 88px;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  text-shadow: 3px 3px #000000;
+}
+
+#myrole {
+  font-size: 52px;
+  color: white;
+  font-family: 'Shadows Into Light', cursive;
+}
+
+/* Sliding Project Panels */
+
+.projects {
+  color: black;
+  background-color: white;
+  
+}
+
+.actionable_pix {
+  display:inline;
+  list-style-type:none;
+}
+
+.survey_pix {
+  display:inline;
+  list-style-type:none;
+}
+
+.madurai_pix {
+  display:inline;
+  list-style-type:none;
+}
+
+.park_pix {
+  display:inline;
+  list-style-type:none;
+}
+
+.menu_pix {
+  display:inline;
+  list-style-type:none;
+}
+
+dl {
+
+}
+
+dd {
+  margin: 0;
+  padding: 1em 0;
+}
+
+dt {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 2.5em;
+  line-height: 2em;
+  background: #e3e3e3;
+  border-bottom: 1px solid #c5c5c5;
+  border-top: 1px solid white;
+  font-family: 'Oswald', sans-serif;
+  letter-spacing: 10px;
+}
+
+dt > h4 {
+  font-weight: italic;
+}
+
+dt:hover {
+  background: white;
+}
+
+dt:first-child { border-stop: none; }
+dt:nth-last-child(2) { border-bottom: none; }
+
+.hide { display: none;}
+
+/* Bottom Contact Div */
+
+.contact > h2 {
+  margin: 0;
+  padding: 0;
+}
+
+.contactbox {
+  padding-left: 1cm;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  color: white;
+  background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url("<%= asset_path('hkbaby.jpg') %>)") no-repeat fixed;
+
+  background-size: cover;
+  text-shadow: 2px 2px #000000;
+}
+
+/* ********** */
+/* D3 Treemap */
+#chart {
+  width: 960px;
+  height: 500px;
+  padding-left: 15%;
+  padding-bottom: 2cm;
+}
+
+text {
+  pointer-events: none;
+}
+
+.grandparent text {
+  font-weight: bold;
+}
+
+rect {
+/*  fill: none; */
+  stroke: #fff;
+  stroke-width: 1px;
+}
+
+rect.parent,
+.grandparent rect {
+  stroke-width: 2px;
+}
+
+.grandparent:hover rect {
+  fill: darkgrey;
+}
+
+.children rect.parent,
+.grandparent rect {
+  cursor: pointer;
+}
+
+.children rect.child {
+  opacity: 0;
+}
+
+.children rect.parent {
+}
+
+.children:hover rect.child {
+  opacity: 1;
+  stroke-width: 1px;
+}
+
+.children:hover rect.parent {
+  opacity: 0;
+}
+
+.legend rect {
+  stroke-width: 0px;
+}
+
+.legend text {
+  text-anchor: middle;
+  pointer-events: auto;
+  font-size: 15px;
+  font-family: sans-serif;
+  fill: black;
+}
+body {
+  background-color: white;
+}
+
+#header {
+  color: black;
+}
+
+/* Title 
+.content {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.titles {
+    font-family: "Lucida Console", Monaco, monospace;
+    position: relative;
+    z-index: 3;
+    color: white;
+    margin: 0 auto;
+}
+
+.titles > h1 {
+    font-size: 56px;
+}
+
+/* Historical Average Line 
+
+#historical-text {
+    font-family: sans-serif;
+    text-align: right;
+}
+
+#historical-line {
+    color: #f00; 
+    background-color: #f00; 
+    height: 5px; 
+    border: 0 none;
+    opacity: 0.4;
+    font-family: "Lucida Console", Monaco, monospace;
+    position: relative;
+    z-index: 3;
+}
+
+#historical-num {
+    z-index: 3;
+    text-align: right;
+    font-family: sans-serif;
+}
+
+
+/* Water Technology 
+.full-tank {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: white;
+    position: absolute;
+    overflow: hidden;
+    background-image: url(/assets/desert.jpg);
+    z-index: 1;
+}
+
+#wrapper {
+    padding: 0;
+    margin: 0;
+    z-index: 1;
+    color: white;
+}
+
+#water {
+    position: absolute;
+    background-image: url(/assets/Sky_Blue.png);
+    width: 500%;
+    bottom: 0;
+    opacity: 0.5;
+    z-index: 2;
+}
+
+/* Flip Counter 
+
+
+ul.cd {
+    float:left;
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    z-index: 3;
+}
+
+li.t {
+    background:url(../assets/digits-top.png) 0 0 no-repeat;
+    width: 52px;
+    height: 39px;
+}
+
+li.b {
+    background:url(../assets/digits-bottom.png) 0 0 no-repeat;
+    width: 52px;
+    height: 38px;
+}
+
+li.s {
+    background:url(../assets/comma.png) 2px 75px no-repeat;
+    width: 12px;
+    height: 100px;
+}
+*/
+
+/* D3 Treemap */
+#chart {
+  width: 960px;
+  height: 500px;
+}
+
+text {
+  pointer-events: none;
+}
+
+.grandparent text {
+  font-weight: bold;
+}
+
+rect {
+/*  fill: none; */
+  stroke: #fff;
+  stroke-width: 1px;
+}
+
+rect.parent,
+.grandparent rect {
+  stroke-width: 2px;
+}
+
+.grandparent:hover rect {
+  fill: darkgrey;
+}
+
+.children rect.parent,
+.grandparent rect {
+  cursor: pointer;
+}
+
+.children rect.child {
+  opacity: 0;
+}
+
+.children rect.parent {
+}
+
+.children:hover rect.child {
+  opacity: 1;
+  stroke-width: 1px;
+}
+
+.children:hover rect.parent {
+  opacity: 0;
+}
+
+.legend rect {
+  stroke-width: 0px;
+}
+
+.legend text {
+  text-anchor: middle;
+  pointer-events: auto;
+  font-size: 15px;
+  font-family: sans-serif;
+  fill: black;
+}
+
+/* Imported Styles 
+html {
+  min-width: 1040px;
+}
+*/
+
+body {
+  font-family: "Helvetica Neue", Helvetica, sans-serif;
+
+  position: relative;
+  tab-size: 2;
+  width: 960px;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 300;
+  letter-spacing: -2px;
+  margin: .3em 0 .1em 0;
+}
+
+h2 {
+  margin-top: 2em;
+}
+
+h1, h2 {
+  text-rendering: optimizeLegibility;
+}
+
+h2 a {
+  color: #ccc;
+  left: -20px;
+  position: absolute;
+  width: 740px;
+}
+
+.date {
+  color: #aaa;
+  margin-left: 1em;
+}
+
+footer {
+  margin-top: 8em;
+}
+
+aside {
+  font-size: small;
+  left: 780px;
+  position: absolute;
+  text-align: right;
+  width: 180px;
+}
+
+p {
+  line-height: 1.5em;
+  width: 720px;
+}
+
+blockquote {
+  width: 640px;
+}
+
+li {
+  width: 680px;
+}
+
+a {
+  color: steelblue;
+}
+
+a:not(:hover) {
+  text-decoration: none;
+}
+
+pre, code, textarea {
+  font-family: "Menlo", monospace;
+  line-height: normal;
+}
+
+textarea {
+  font-size: 100%;
+}
+
+pre {
+  border-left: solid 2px #ccc;
+  padding-left: 18px;
+  margin: 2em 0 2em -20px;
+  width: 960px;
+  overflow-x: auto;
+}
+
+.html .value,
+.javascript .string,
+.javascript .regexp {
+  color: #756bb1;
+}
+
+.html .tag,
+.css .tag,
+.javascript .keyword {
+  color: #3182bd;
+}
+
+aside,
+.comment {
+  color: #636363;
+}
+
+.html .doctype,
+.javascript .number {
+  color: #31a354;
+}
+
+.html .attribute,
+.css .attribute,
+.javascript .class,
+.javascript .special {
+  color: #e6550d;
+}
+
+iframe {
+  width: 960px;
+  height: 500px;
+  border: 1px solid #DEDEDE;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+
+
+ */
+
